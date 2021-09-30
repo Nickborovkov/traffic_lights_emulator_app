@@ -1,8 +1,4 @@
 <template>
-    <div>
-        <h1>currentColor: {{currentColor}} ||| prevWasRed:{{prevWasRed}} ||| prevWasGreen:{{prevWasGreen}} |||
-            time:{{time}} </h1>
-
         <div class="trafficLightBody">
             <singleLight
                     class="singleLight"
@@ -20,9 +16,6 @@
                     :currentColor="currentColor"
                     :timer="timeLeft"></singleLight>
         </div>
-
-    </div>
-
 </template>
 
 <script>
@@ -48,26 +41,26 @@
                     this.prevWasGreen = false
                     setTimeout(()=>{
                         this.$router.replace(`/yellow`)
-                    }, 10000)
+                    }, 1000 * this.time)
                 }
                 if(this.currentColor === `green`){
                     this.prevWasGreen = true
                     this.prevWasRed = false
                     setTimeout(()=>{
                         this.$router.replace(`/yellow`)
-                    }, 15000)
+                    }, 1000 * this.time)
                 }
                 if(this.currentColor === `yellow` && this.prevWasRed){
                     this.prevWasRed = false
                     setTimeout(()=>{
                         this.$router.replace(`/green`)
-                    }, 3000)
+                    }, 1000 * this.time)
                 }
                 if(this.currentColor === `yellow` && this.prevWasGreen){
                     this.prevWasGreen = false
                     setTimeout(()=>{
                         this.$router.replace(`/red`)
-                    }, 3000)
+                    }, 1000 * this.time)
                 }
             },
             setTimer () {
@@ -77,7 +70,7 @@
                     clearInterval(this.interval)
                 }
 
-                this.interval = setInterval(()=>{
+                this.interval = setInterval(() => {
                     this.timeLeft = this.timeLeft - 1
                 },1000)
             },
@@ -87,10 +80,10 @@
             this.setTimer()
         },
         watch: {
-            $route() {
-                this.setPrevColor()
-                this.setTimer()
-            },
+          $route () {
+              this.setPrevColor()
+              this.setTimer()
+          }
         },
     }
 </script>

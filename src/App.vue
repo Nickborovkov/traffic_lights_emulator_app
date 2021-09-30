@@ -2,24 +2,24 @@
   <div>
     <h1 class="mainTitle">Traffic lights emulator app</h1>
 
-    <div class="linksHolder">
-      <h2>Choose light to start with</h2>
+<!--    <div class="linksHolder">-->
+<!--      <h2>Choose light to start with</h2>-->
 
-      <div class="linksWrapper">
-        <router-link
-                class="link"
-                active-class="linkActive"
-                to="/red">Red</router-link>
-        <router-link
-                class="link"
-                active-class="linkActive"
-                to="/yellow">Yellow</router-link>
-        <router-link
-                class="link"
-                active-class="linkActive"
-                to="/green">Green</router-link>
-      </div>
-    </div>
+<!--      <div class="linksWrapper">-->
+<!--        <router-link-->
+<!--                class="link"-->
+<!--                active-class="linkActive"-->
+<!--                to="/red">Red</router-link>-->
+<!--        <router-link-->
+<!--                class="link"-->
+<!--                active-class="linkActive"-->
+<!--                to="/yellow">Yellow</router-link>-->
+<!--        <router-link-->
+<!--                class="link"-->
+<!--                active-class="linkActive"-->
+<!--                to="/green">Green</router-link>-->
+<!--      </div>-->
+<!--    </div>-->
 
     <router-view></router-view>
 
@@ -43,6 +43,7 @@ export default {
     color: #333333;
     padding: 10px 0;
     font-family: Calibri;
+    margin-bottom: 20px;
   }
   .linksHolder{
     background-color: #42b883;
