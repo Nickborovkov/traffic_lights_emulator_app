@@ -31,6 +31,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
+    //hash mode used because othervise there's a bug with page refreshing on gh-pages deployment
     mode: 'hash',
     base: process.env.BASE_URL,
     routes,
