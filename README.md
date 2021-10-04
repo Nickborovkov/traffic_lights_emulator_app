@@ -6,7 +6,7 @@
 
 ### Traffic light starts when app initializes
 
-### App can be started from any route
+### App can be started from any route (NOT ON GH-PAGES)
 
 ### Timer shows time left before switching lights
 
