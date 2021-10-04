@@ -6,9 +6,9 @@
 
 ### Traffic light starts when app initializes
 
-### App can be started frim any route
+### App can be started from any route
 
-### Timer shows time left before swithing lights
+### Timer shows time left before switching lights
 
 ### When timer time is lower than 3 - the light starts blinking
 
