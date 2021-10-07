@@ -1,6 +1,6 @@
 # Traffic lights emulator app
 
-![image](https://github.com/Nickborovkov/traffic_lights_emulator_app/blob/master/appScreenshot.png)
+![image](https://github.com/Nickborovkov/traffic_lights_emulator_app/blob/master/src/assets/images/appScreenshot.png)
 
 ## [See deployment](https://nickborovkov.github.io/traffic_lights_emulator_app/)
 
